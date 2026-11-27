@@ -386,7 +386,7 @@
   const DATA = {
     region: "북부지역단",            // 원본 01_매일 실적 제목의 '강북지역단'은 북부지역단으로 바로잡았어요
     branchCount: 13,
-    baseDate: "2026-11-23",          // 기준일 = 매일 실적 파일 저장일의 전 영업일 (월요일 → 금요일)
+    baseDate: "2026-11-26",          // 기준일 = 매일 실적 파일 저장일의 전 영업일 (월요일 → 금요일)
 
     // 정착 인정 기준 (1. 2026년 4분기 평가기준_점포).xlsx → 평가기준(2) 시트)
     criteria: {
@@ -399,91 +399,91 @@
     // 01_매일 실적 : 사람별 장기신 환산 실적 (금액 단위: 원)
     // month = 차월, amount = 장기신 환산, code = 하이플래너 코드 (앞 2자리만 남기고 가렸어요)
     people: [
-    { branch: "김포지점", team: "03", name: "하재선", code: "1D****", month: 3, amount: 2000000 },
-    { branch: "김포지점", team: "02", name: "윤현숙", code: "1D****", month: 3, amount: 537681 },
-    { branch: "김포지점", team: "01", name: "김미영", code: "1F****", month: 2, amount: 857507 },
-    { branch: "김포지점", team: "03", name: "이서윤", code: "1D****", month: 4, amount: 469814 },
-    { branch: "김포지점", team: "03", name: "황은미", code: "1D****", month: 4, amount: 521550 },
-    { branch: "김포지점", team: "03", name: "김명진", code: "1D****", month: 3, amount: 0 },
-    { branch: "김포지점", team: "03", name: "조성일", code: "1D****", month: 3, amount: 0 },
-    { branch: "김포지점", team: "03", name: "강태우", code: "1D****", month: 3, amount: 0 },
-    { branch: "김포지점", team: "03", name: "이유청", code: "1F****", month: 3, amount: 0 },
-    { branch: "김포지점", team: "03", name: "신동철", code: "1D****", month: 3, amount: 0 },
-    { branch: "김포지점", team: "03", name: "문민영", code: "1D****", month: 5, amount: 0 },
-    { branch: "김포지점", team: "02", name: "조경자", code: "1D****", month: 3, amount: 0 },
-    { branch: "김포지점", team: "03", name: "이위진", code: "1D****", month: 4, amount: 0 },
-    { branch: "김포지점", team: "02", name: "김재성", code: "1D****", month: 4, amount: 0 },
-    { branch: "김포지점", team: "01", name: "한민정", code: "1D****", month: 4, amount: 0 },
-    { branch: "김포지점", team: "01", name: "서수미", code: "1D****", month: 4, amount: 0 },
-    { branch: "김포지점", team: "03", name: "김미라", code: "1D****", month: 4, amount: 0 },
-    { branch: "의정부지점", team: "01", name: "임현주", code: "1D****", month: 3, amount: 408745 },
-    { branch: "의정부지점", team: "01", name: "곽훈", code: "1D****", month: 4, amount: 265616 },
-    { branch: "의정부지점", team: "01", name: "염상민", code: "1D****", month: 5, amount: 74472 },
-    { branch: "의정부지점", team: "02", name: "박경화", code: "1D****", month: 5, amount: 0 },
-    { branch: "의정부지점", team: "01", name: "장용국", code: "1F****", month: 2, amount: 0 },
-    { branch: "의정부지점", team: "02", name: "이경찬", code: "1D****", month: 4, amount: 0 },
-    { branch: "경기북부지점", team: "02", name: "방혜숙", code: "1D****", month: 5, amount: 572728 },
-    { branch: "경기북부지점", team: "04", name: "황하나", code: "1D****", month: 5, amount: 504660 },
-    { branch: "경기북부지점", team: "04", name: "손지영", code: "1D****", month: 5, amount: 386774 },
-    { branch: "경기북부지점", team: "04", name: "이미경", code: "1D****", month: 5, amount: 71190 },
-    { branch: "경기북부지점", team: "03", name: "이강봉", code: "1D****", month: 4, amount: 0 },
-    { branch: "경기북부지점", team: "04", name: "강소영", code: "1D****", month: 3, amount: 0 },
-    { branch: "경기북부지점", team: "03", name: "장세철", code: "1D****", month: 5, amount: 0 },
-    { branch: "경기북부지점", team: "03", name: "이숙진", code: "1F****", month: 2, amount: 445926 },
-    { branch: "포천양주지점", team: "01", name: "박우미", code: "1D****", month: 4, amount: 818038 },
-    { branch: "포천양주지점", team: "01", name: "김정현", code: "1D****", month: 4, amount: 829500 },
-    { branch: "포천양주지점", team: "01", name: "신주영", code: "1D****", month: 4, amount: 804450 },
-    { branch: "포천양주지점", team: "02", name: "이소윤", code: "1F****", month: 2, amount: 610168 },
-    { branch: "포천양주지점", team: "02", name: "박영록", code: "1F****", month: 2, amount: 522366 },
-    { branch: "포천양주지점", team: "02", name: "박지영", code: "1D****", month: 4, amount: 606346 },
-    { branch: "포천양주지점", team: "02", name: "오현우", code: "1D****", month: 4, amount: 0 },
-    { branch: "포천양주지점", team: "02", name: "임지윤", code: "1D****", month: 5, amount: 0 },
-    { branch: "옥정지점", team: "01", name: "박수진", code: "1D****", month: 4, amount: 400452 },
-    { branch: "옥정지점", team: "01", name: "경미화", code: "1D****", month: 5, amount: 278638 },
-    { branch: "옥정지점", team: "02", name: "이성미", code: "1F****", month: 2, amount: 92375 },
-    { branch: "옥정지점", team: "02", name: "김용만", code: "1D****", month: 5, amount: 0 },
-    { branch: "옥정지점", team: "02", name: "서민관", code: "1D****", month: 5, amount: 0 },
+    { branch: "김포지점", team: "3", name: "하재선", code: "1D****", month: 3, amount: 2348575 },
+    { branch: "김포지점", team: "2", name: "윤현숙", code: "1D****", month: 3, amount: 878325 },
+    { branch: "김포지점", team: "1", name: "김미영", code: "1F****", month: 2, amount: 1025507 },
+    { branch: "김포지점", team: "3", name: "이서윤", code: "1D****", month: 4, amount: 469814 },
+    { branch: "김포지점", team: "3", name: "황은미", code: "1D****", month: 4, amount: 521550 },
+    { branch: "김포지점", team: "3", name: "김명진", code: "1D****", month: 3, amount: 0 },
+    { branch: "김포지점", team: "3", name: "조성일", code: "1D****", month: 3, amount: 0 },
+    { branch: "김포지점", team: "3", name: "강태우", code: "1D****", month: 3, amount: 0 },
+    { branch: "김포지점", team: "3", name: "이유청", code: "1F****", month: 3, amount: 400000 },
+    { branch: "김포지점", team: "3", name: "신동철", code: "1D****", month: 3, amount: 0 },
+    { branch: "김포지점", team: "3", name: "문민영", code: "1D****", month: 5, amount: 0 },
+    { branch: "김포지점", team: "2", name: "조경자", code: "1D****", month: 3, amount: 0 },
+    { branch: "김포지점", team: "3", name: "이위진", code: "1D****", month: 4, amount: 0 },
+    { branch: "김포지점", team: "2", name: "김재성", code: "1D****", month: 4, amount: 0 },
+    { branch: "김포지점", team: "1", name: "한민정", code: "1D****", month: 4, amount: 0 },
+    { branch: "김포지점", team: "1", name: "서수미", code: "1D****", month: 4, amount: 0 },
+    { branch: "김포지점", team: "3", name: "김미라", code: "1D****", month: 4, amount: 0 },
+    { branch: "의정부지점", team: "1", name: "임현주", code: "1D****", month: 3, amount: 408745 },
+    { branch: "의정부지점", team: "1", name: "곽훈", code: "1D****", month: 4, amount: 265616 },
+    { branch: "의정부지점", team: "1", name: "염상민", code: "1D****", month: 5, amount: 74472 },
+    { branch: "의정부지점", team: "2", name: "박경화", code: "1D****", month: 5, amount: 0 },
+    { branch: "의정부지점", team: "1", name: "장용국", code: "1F****", month: 2, amount: 0 },
+    { branch: "의정부지점", team: "2", name: "이경찬", code: "1D****", month: 4, amount: 0 },
+    { branch: "경기북부지점", team: "2", name: "방혜숙", code: "1D****", month: 5, amount: 572728 },
+    { branch: "경기북부지점", team: "4", name: "황하나", code: "1D****", month: 5, amount: 649272 },
+    { branch: "경기북부지점", team: "4", name: "손지영", code: "1D****", month: 5, amount: 669248 },
+    { branch: "경기북부지점", team: "4", name: "이미경", code: "1D****", month: 5, amount: 71190 },
+    { branch: "경기북부지점", team: "3", name: "이강봉", code: "1D****", month: 4, amount: 0 },
+    { branch: "경기북부지점", team: "4", name: "강소영", code: "1D****", month: 3, amount: 403825 },
+    { branch: "경기북부지점", team: "3", name: "장세철", code: "1D****", month: 5, amount: 0 },
+    { branch: "경기북부지점", team: "3", name: "이숙진", code: "1F****", month: 2, amount: 638716 },
+    { branch: "포천양주지점", team: "1", name: "박우미", code: "1D****", month: 4, amount: 818038 },
+    { branch: "포천양주지점", team: "1", name: "김정현", code: "1D****", month: 4, amount: 829500 },
+    { branch: "포천양주지점", team: "1", name: "신주영", code: "1D****", month: 4, amount: 804450 },
+    { branch: "포천양주지점", team: "2", name: "이소윤", code: "1F****", month: 2, amount: 610168 },
+    { branch: "포천양주지점", team: "2", name: "박영록", code: "1F****", month: 2, amount: 810706 },
+    { branch: "포천양주지점", team: "2", name: "박지영", code: "1D****", month: 4, amount: 606346 },
+    { branch: "포천양주지점", team: "2", name: "오현우", code: "1D****", month: 4, amount: 0 },
+    { branch: "포천양주지점", team: "2", name: "임지윤", code: "1D****", month: 5, amount: 0 },
+    { branch: "옥정지점", team: "1", name: "박수진", code: "1D****", month: 4, amount: 400452 },
+    { branch: "옥정지점", team: "1", name: "경미화", code: "1D****", month: 5, amount: 278638 },
+    { branch: "옥정지점", team: "2", name: "이성미", code: "1F****", month: 2, amount: 92375 },
+    { branch: "옥정지점", team: "2", name: "김용만", code: "1D****", month: 5, amount: 0 },
+    { branch: "옥정지점", team: "2", name: "서민관", code: "1D****", month: 5, amount: 0 },
     { branch: "의정부TC지점", team: "21", name: "김은경", code: "1D****", month: 5, amount: 601400 },
     { branch: "의정부TC지점", team: "21", name: "정영숙", code: "1F****", month: 2, amount: 601031 },
     { branch: "의정부TC지점", team: "21", name: "박미영", code: "1D****", month: 4, amount: 600763 },
     { branch: "의정부TC지점", team: "21", name: "이미란", code: "1D****", month: 3, amount: 600573 },
     { branch: "의정부TC지점", team: "22", name: "한정미", code: "1F****", month: 2, amount: 601068 },
-    { branch: "의정부TC지점", team: "21", name: "나미숙", code: "1D****", month: 3, amount: 463920 },
+    { branch: "의정부TC지점", team: "21", name: "나미숙", code: "1D****", month: 3, amount: 468964 },
     { branch: "의정부TC지점", team: "21", name: "박미경", code: "1D****", month: 3, amount: 0 },
-    { branch: "의정부TC지점", team: "21", name: "김종임", code: "1D****", month: 3, amount: 136734 },
+    { branch: "의정부TC지점", team: "21", name: "김종임", code: "1D****", month: 3, amount: 405990 },
     { branch: "의정부TC지점", team: "22", name: "김남선", code: "1D****", month: 3, amount: 0 },
     { branch: "의정부TC지점", team: "22", name: "정영숙", code: "1D****", month: 5, amount: 0 },
     { branch: "의정부TC지점", team: "21", name: "김복경", code: "1F****", month: 2, amount: 0 },
-    { branch: "의정부TC지점", team: "22", name: "이경아", code: "1D****", month: 4, amount: 0 },
-    { branch: "일산중앙지점", team: "01", name: "정미숙", code: "1F****", month: 2, amount: 929197 },
-    { branch: "일산중앙지점", team: "02", name: "김정희", code: "1F****", month: 2, amount: 857753 },
-    { branch: "일산중앙지점", team: "01", name: "이하은", code: "1D****", month: 3, amount: 0 },
-    { branch: "일산제일지점", team: "01", name: "유민희", code: "1D****", month: 4, amount: 1046898 },
-    { branch: "일산제일지점", team: "03", name: "신희선", code: "1D****", month: 4, amount: 944190 },
-    { branch: "일산제일지점", team: "02", name: "조성용", code: "1F****", month: 2, amount: 1012006 },
-    { branch: "일산제일지점", team: "01", name: "김성숙", code: "1D****", month: 3, amount: 400632 },
-    { branch: "일산제일지점", team: "03", name: "박수정", code: "1D****", month: 4, amount: 426586 },
-    { branch: "일산제일지점", team: "01", name: "김금옥", code: "1D****", month: 5, amount: 978666 },
-    { branch: "일산제일지점", team: "02", name: "송후봉", code: "1D****", month: 4, amount: 267046 },
-    { branch: "일산제일지점", team: "01", name: "정미정", code: "1D****", month: 3, amount: 0 },
-    { branch: "일산제일지점", team: "01", name: "김현수", code: "1D****", month: 5, amount: 0 },
-    { branch: "일산제일지점", team: "02", name: "강성호", code: "1D****", month: 5, amount: 0 },
-    { branch: "일산대화지점", team: "01", name: "남민희", code: "1D****", month: 3, amount: 633325 },
-    { branch: "일산대화지점", team: "01", name: "김가영", code: "1D****", month: 3, amount: 433214 },
-    { branch: "일산대화지점", team: "02", name: "이은희", code: "1F****", month: 2, amount: 140192 },
-    { branch: "일산대화지점", team: "01", name: "이서윤", code: "1F****", month: 2, amount: 0 },
-    { branch: "운정지점", team: "01", name: "김미경", code: "1D****", month: 3, amount: 600245 },
-    { branch: "운정지점", team: "01", name: "서강현", code: "1D****", month: 3, amount: 141075 },
-    { branch: "운정지점", team: "02", name: "황문경", code: "1F****", month: 2, amount: 621099 },
+    { branch: "의정부TC지점", team: "22", name: "이경아", code: "1D****", month: 4, amount: 403962 },
+    { branch: "일산중앙지점", team: "1", name: "정미숙", code: "1F****", month: 2, amount: 1030701 },
+    { branch: "일산중앙지점", team: "2", name: "김정희", code: "1F****", month: 2, amount: 1114191 },
+    { branch: "일산중앙지점", team: "1", name: "이하은", code: "1D****", month: 3, amount: 606633 },
+    { branch: "일산제일지점", team: "1", name: "유민희", code: "1D****", month: 4, amount: 1046898 },
+    { branch: "일산제일지점", team: "3", name: "신희선", code: "1D****", month: 4, amount: 1023906 },
+    { branch: "일산제일지점", team: "2", name: "조성용", code: "1F****", month: 2, amount: 1514181 },
+    { branch: "일산제일지점", team: "1", name: "김성숙", code: "1D****", month: 3, amount: 651702 },
+    { branch: "일산제일지점", team: "3", name: "박수정", code: "1D****", month: 4, amount: 689182 },
+    { branch: "일산제일지점", team: "1", name: "김금옥", code: "1D****", month: 5, amount: 1075130 },
+    { branch: "일산제일지점", team: "2", name: "송후봉", code: "1D****", month: 4, amount: 638376 },
+    { branch: "일산제일지점", team: "1", name: "정미정", code: "1D****", month: 3, amount: 0 },
+    { branch: "일산제일지점", team: "1", name: "김현수", code: "1D****", month: 5, amount: 0 },
+    { branch: "일산제일지점", team: "2", name: "강성호", code: "1D****", month: 5, amount: 0 },
+    { branch: "일산대화지점", team: "1", name: "남민희", code: "1D****", month: 3, amount: 633325 },
+    { branch: "일산대화지점", team: "1", name: "김가영", code: "1D****", month: 3, amount: 433214 },
+    { branch: "일산대화지점", team: "2", name: "이은희", code: "1F****", month: 2, amount: 140192 },
+    { branch: "일산대화지점", team: "1", name: "이서윤", code: "1F****", month: 2, amount: 0 },
+    { branch: "운정지점", team: "1", name: "김미경", code: "1D****", month: 3, amount: 600245 },
+    { branch: "운정지점", team: "1", name: "서강현", code: "1D****", month: 3, amount: 141075 },
+    { branch: "운정지점", team: "2", name: "황문경", code: "1F****", month: 2, amount: 621099 },
     { branch: "일산TC지점", team: "22", name: "이세은", code: "1D****", month: 3, amount: 665700 },
-    { branch: "일산TC지점", team: "21", name: "정승희", code: "1D****", month: 5, amount: 663094 },
+    { branch: "일산TC지점", team: "21", name: "정승희", code: "1D****", month: 5, amount: 519332 },
     { branch: "일산TC지점", team: "21", name: "오희숙", code: "1D****", month: 3, amount: 407694 },
     { branch: "일산TC지점", team: "22", name: "이지원", code: "1D****", month: 3, amount: 0 },
     { branch: "일산TC지점", team: "22", name: "장영은", code: "1F****", month: 2, amount: 0 },
     { branch: "일산TC지점", team: "22", name: "조하나", code: "1D****", month: 4, amount: 0 },
     { branch: "일산미래TC지점", team: "21", name: "윤문희", code: "1D****", month: 4, amount: 1524327 },
-    { branch: "일산미래TC지점", team: "21", name: "김아", code: "1F****", month: 2, amount: 823107 },
-    { branch: "일산미래TC지점", team: "23", name: "선미진", code: "1D****", month: 3, amount: 528631 },
+    { branch: "일산미래TC지점", team: "21", name: "김아", code: "1F****", month: 2, amount: 1000077 },
+    { branch: "일산미래TC지점", team: "23", name: "선미진", code: "1D****", month: 3, amount: 601990 },
     { branch: "일산미래TC지점", team: "21", name: "최선숙", code: "1D****", month: 3, amount: 718220 },
     { branch: "일산미래TC지점", team: "21", name: "양미선", code: "1D****", month: 4, amount: 24408 },
     { branch: "일산미래TC지점", team: "23", name: "강수빈", code: "1F****", month: 2, amount: 661151 },
@@ -495,10 +495,10 @@
     { branch: "파주운정TC지점", team: "21", name: "강효정", code: "1F****", month: 2, amount: 600184 },
     { branch: "파주운정TC지점", team: "22", name: "김명자", code: "1D****", month: 3, amount: 644010 },
     { branch: "파주운정TC지점", team: "21", name: "남혜원", code: "1D****", month: 4, amount: 607672 },
-    { branch: "파주운정TC지점", team: "21", name: "김미자", code: "1D****", month: 3, amount: 727376 },
+    { branch: "파주운정TC지점", team: "21", name: "김미자", code: "1D****", month: 3, amount: 821663 },
     { branch: "파주운정TC지점", team: "21", name: "김은진", code: "1F****", month: 2, amount: 601734 },
-    { branch: "파주운정TC지점", team: "22", name: "남상명", code: "1D****", month: 4, amount: 494998 },
-    { branch: "파주운정TC지점", team: "22", name: "박소영", code: "1D****", month: 5, amount: 132782 },
+    { branch: "파주운정TC지점", team: "22", name: "남상명", code: "1D****", month: 4, amount: 834090 },
+    { branch: "파주운정TC지점", team: "22", name: "박소영", code: "1D****", month: 5, amount: 722420 },
     { branch: "파주운정TC지점", team: "22", name: "이지은", code: "1D****", month: 3, amount: 0 },
     { branch: "파주운정TC지점", team: "21", name: "김희진", code: "1D****", month: 3, amount: 0 },
     { branch: "파주운정TC지점", team: "22", name: "김선주", code: "1F****", month: 3, amount: 0 },
@@ -506,8 +506,8 @@
     { branch: "파주운정TC지점", team: "22", name: "이혜지", code: "1D****", month: 5, amount: 423664 },
     { branch: "파주운정TC지점", team: "22", name: "최병춘", code: "1D****", month: 3, amount: 0 },
     { branch: "파주운정TC지점", team: "22", name: "노민아", code: "1D****", month: 5, amount: 0 },
-    { branch: "파주운정TC지점", team: "22", name: "황진희", code: "1F****", month: 2, amount: 0 },
-    { branch: "파주운정TC지점", team: "22", name: "태효원", code: "1F****", month: 2, amount: 0 }
+    { branch: "파주운정TC지점", team: "22", name: "황진희", code: "1F****", month: 2, amount: 603000 },
+    { branch: "파주운정TC지점", team: "22", name: "태효원", code: "1F****", month: 2, amount: 663520 }
     ],
 
     // 02_정착 진도 : '26.4분기 정착평가 진도
@@ -1092,6 +1092,49 @@
   renderBranches();
   animateDonuts();
   if (isAchieved(PROGRESS.region)) setTimeout(confetti, 600);   // 지역단 목표 달성 시 첫 화면에서 폭죽
+  </script>
+
+  <!-- ===== 접속·클릭 기록 (트래킹\설정방법.txt 참고 · 이름은 기록하지 않아요) ===== -->
+  <script>
+  (function () {
+    const TRACK_URL = '';        // 구글 Apps Script 웹 앱 주소(…/exec). 비워 두면 아무것도 기록하지 않아요
+    const SITE = '정착률';
+    // 기록할 버튼: [찾을 요소, 기록할 이름]
+    const RULES = [
+      ['#chips .chip', el => '지점 선택: ' + (el.dataset.branch || '전체')],
+      ['#btn-image', () => '공지 이미지'],
+      ['#btn-text', () => '공지 글 복사'],
+      ['#btn-save', () => '이미지 저장'],
+      ['#btn-share', () => '이미지 공유']
+    ];
+    if (!TRACK_URL) return;
+
+    let vid = '';
+    try {
+      vid = localStorage.getItem('track_vid') || '';
+      if (!vid) { vid = Math.random().toString(36).slice(2, 10); localStorage.setItem('track_vid', vid); }
+    } catch (e) { /* 저장이 막힌 브라우저 */ }
+    const ua = navigator.userAgent;
+    const device = /Mobi|Android|iPhone|iPad/i.test(ua) ? '모바일' : 'PC';
+    const inapp = /KAKAOTALK/i.test(ua) ? '카톡' : '기타';
+
+    function track(type, item) {
+      const body = JSON.stringify({ site: SITE, type: type, item: item || '', vid: vid, device: device, inapp: inapp });
+      try {
+        if (navigator.sendBeacon && navigator.sendBeacon(TRACK_URL, new Blob([body], { type: 'text/plain' }))) return;
+      } catch (e) { /* 아래 fetch로 */ }
+      fetch(TRACK_URL, { method: 'POST', mode: 'no-cors', keepalive: true, body: body }).catch(() => {});
+    }
+
+    track('visit');
+    document.addEventListener('click', e => {
+      if (!e.isTrusted) return;                     // 코드가 대신 누른 클릭은 빼요
+      for (const [sel, name] of RULES) {
+        const el = e.target.closest(sel);
+        if (el) { const item = name(el); if (item) track('click', item); return; }
+      }
+    }, true);
+  })();
   </script>
 </body>
 </html>
